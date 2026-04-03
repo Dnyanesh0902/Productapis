@@ -14,7 +14,7 @@ namespace ProductApi.Repositories
         public async Task<IEnumerable<Products>> GetAllAsync()
         {
             return await _context.Products.ToListAsync();
-        }
+        }                   
         public async Task<Products> GetByIdAsync(int id)
         {
             return await _context.Products.FindAsync(id);
